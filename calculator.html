@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ass1</title>
+    <link rel="stylesheet" href="stylesheets/calculator.css">
+    <script src="calculator.js" defer></script>
+</head>
+
+<body>
+    <div id="mainPart" >
+        <div id="makeTopBlack">
+            <br>
+        </div>
+        <main style="position: relative; left: 30px; top: 40px;" >
+            <h1>Grade Calculator <br></h1>
+            <div id="centralPart">
+                <br>
+                <div id="makeItRight" style="position: relative; left: 10px;">
+                    <h2>Activities</h2>
+                    <p>
+                        Give grades to the numeric activities:
+                    </p>
+                    <table id="tab" border="1">
+                        <tr id="firstRow">
+                            <td width="100">Name</th>
+                            <td width="100">Short Name</th>
+                            <td width="100">Weight</th>
+                            <td width="100">Grade</th>
+                            <td width="100">Percent</th>
+                        </tr>
+                        <tr id="secondRow">
+                            <td>Activity 1</td>
+                            <td>A1</td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a11">
+                            </td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a12">
+                                /
+                                <input type="number" id="a13">
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Activity 2</td>
+                            <td>A2</td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a21">
+                            </td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a22">
+                                /
+                                <input type="number" id="a23">
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Activity 3</td>
+                            <td>A3</td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a31">
+                            </td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a32">
+                                /
+                                <input type="number" id="a33">
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Activity 4</td>
+                            <td>A4</td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a41">
+                            </td>
+                            <td style="position: relative; left: 5px;">
+                                <input type="number" id="a42">
+                                /
+                                <input type="number" id="a43">
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button id="button1" onclick="add_entry()">
+                        <section>
+                            ADD ACTIVITY
+                        </section>
+                    </button>
+                    <br>
+                    <p id="result">
+                        Result
+                    </p>
+                    <div id="showGrades" style="display:none;" class="answer_list" > Your grades is: <span id = "grades"></span>%.
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div style="position: relative; left: 620px; bottom: 60px;">
+                        <button id="button2" onclick="weightedGrades()">
+                            WEIGHTED
+                        </button>
+                        <button id="button3" onclick="mean_of_grades()">
+                            MEAN
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+    </div>
+    <div id="makeBottomBlack">
+        <br> <br>
+    </div>
+    </main>
+</body>
+
+</html>
